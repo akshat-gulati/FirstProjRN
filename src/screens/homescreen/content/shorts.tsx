@@ -29,7 +29,9 @@ const shorts = () => {
                 {images.map((image, index) => (
                     <View style={styles.row} key={index}>
                         <ImageBackground source={image} style={styles.shortView}>
-                            <Text style={styles.shortsText}>This is 1</Text>
+                            <Text style={styles.shortsText}>This is friday
+                                
+                            </Text>
                         </ImageBackground>
                     </View>
                 ))}
