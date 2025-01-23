@@ -53,7 +53,6 @@ export default Header99
 const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
-    gap: 10
   },
   header: {
     flexDirection: "row",
@@ -75,6 +74,7 @@ const styles = StyleSheet.create({
   },
   exploreHeader: {
     flexDirection: "row",
+    margin: 10
   },
   boxHeader: {
     marginHorizontal: 4,
