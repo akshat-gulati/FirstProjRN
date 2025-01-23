@@ -3,19 +3,22 @@ import React from 'react'
 import Header99 from './screens/homescreen/header'
 import Shorts from "./screens/homescreen/content/shorts"
 import Video from './screens/homescreen/content/video'
+import Search from './screens/search/search'
 
 const App = () => {
   return (
 
     <SafeAreaView style={{ flex: 1 }}>
-      <Header99 />
+      {/* <Header99 />
       <ScrollView style={styles.container}>
 
         <View>
           <Shorts />
           <Video />
         </View>
-      </ScrollView>
+      </ScrollView> */}
+      
+      <Search />
     </SafeAreaView>
 
 
