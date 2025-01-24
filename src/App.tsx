@@ -1,25 +1,32 @@
 import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
-import Header99 from './screens/homescreen/header'
-import Shorts from "./screens/homescreen/content/shorts"
-import Video from './screens/homescreen/content/video'
-import Search from './screens/search/search'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Home from './Home'
+import Profile from './Profile'
+import { NavigationContainer } from '@react-navigation/native'
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+
+const Stack = createNativeStackNavigator();
+
+const StackNavigator = () => {
+  return (
+    <Stack.Navigator initialRouteName='Profile'>
+
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Profile" component={Profile} />
+
+    </Stack.Navigator>
+  )
+}
 
 const App = () => {
   return (
-
-    <SafeAreaView style={{ flex: 1 }}>
-      {/* <Header99 />
-      <ScrollView style={styles.container}>
-
-        <View>
-          <Shorts />
-          <Video />
-        </View>
-      </ScrollView> */}
-      
-      <Search />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <StackNavigator />
+      </NavigationContainer>
+    </SafeAreaProvider>
 
 
   )
