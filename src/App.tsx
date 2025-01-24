@@ -1,43 +1,34 @@
-import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native'
+import { StyleSheet } from 'react-native'
 import React from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from './Home'
 import Profile from './Profile'
-import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Search from './Search';
+import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName='Profile'>
-
+    <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Profile" component={Profile} />
-
+      <Stack.Screen name="Search" component={Search} />
     </Stack.Navigator>
   )
 }
 
 const App = () => {
   return (
-    <SafeAreaProvider>
+    // <SafeAreaProvider>
       <NavigationContainer>
         <StackNavigator />
       </NavigationContainer>
-    </SafeAreaProvider>
-
-
+    // </SafeAreaProvider>
   )
 }
 
+const styles = StyleSheet.create({})
 export default App
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "",
-    // margin: 10
-  }
-})
+// const styles = StyleSheet.create({})
