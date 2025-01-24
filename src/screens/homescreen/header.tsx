@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   exploreHeader: {
     flexDirection: "row",
-    margin: 10
+    marginVertical: 10
   },
   boxHeader: {
     marginHorizontal: 4,
