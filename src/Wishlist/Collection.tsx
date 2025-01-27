@@ -17,7 +17,7 @@ const Collection = () => {
                 <View style={styles.lowerBoxInfo}>
                     <Image style={styles.lowerBoxImage} source={require('../assets/images/wishlist/lock.fill.png')} />
                     <Text style={styles.lowerBoxText}>Private</Text>
-                    <Text style={styles.lowerBoxText}>3 items</Text>
+                    <Text style={styles.lowerBoxText}>4 items</Text>
                 </View>
             </View>
         </View>
