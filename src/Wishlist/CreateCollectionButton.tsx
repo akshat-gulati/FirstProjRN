@@ -4,7 +4,7 @@ import React from 'react'
 const CreateCollectionButton = () => {
   return (
     <View style={styles.container}>
-        <Text>+ Create New Collection Button</Text>
+        <Text>+ Create New Collection</Text>
     </View>
   )
 }
