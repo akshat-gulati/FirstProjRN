@@ -7,6 +7,8 @@ import Search from './Search';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import FlatLists from './FlatLists';
+import { Text } from 'react-native-gesture-handler';
+import TextBox from './TextBox';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,9 +29,9 @@ const App = () => {
     //   <StackNavigator />
     // </NavigationContainer>
     // </SafeAreaProvider>
-    <SafeAreaView>
-      <FlatLists />
-    </SafeAreaView>
+    //<SafeAreaView>
+      <TextBox />
+    //</SafeAreaView>
   )
 }
 
